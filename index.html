@@ -28,6 +28,10 @@
           if($scope.newMessage == 3){
              $scope.newMessage = "ok... maybe some inspiring statement?";
           }
+          
+          if($scope.newMessage == 3){
+             $scope.newMessage = "ok... never mind come back another time";
+          }
          
           $scope.messages.push($scope.newMessage);
         };
@@ -36,7 +40,7 @@
   </header>
   
   <body ng-controller="MyController">
-    Enter something or a blank or 1 or 2 or 3:<br>     
+    Enter something or a blank or 1 or 2 or 3 or 4:<br>     
     <input type="text" ng-model="newMessage">
     <input type="submit" ng-click="add()" value="Enter">
     <br>
